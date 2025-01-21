@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dr311uiln6dle"]
+
+[ext_resource type="Script" path="res://scripts/system/system/main_game.gd" id="1_4j10d"]
+[ext_resource type="Texture2D" uid="uid://dabrtcvemppaq" path="res://assets/sprites/ui/backgrounds/sprite_bg.png" id="1_nlt76"]
+
+[node name="main_game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4j10d")
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_nlt76")
