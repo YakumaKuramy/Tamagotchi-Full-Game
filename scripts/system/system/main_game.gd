@@ -1,4 +1,4 @@
 extends Control
 
-func _process(_delta: float) -> void:
-	pass
+func _ready() -> void:
+	GeralBgm.play_music(2)

@@ -11,18 +11,28 @@ config_version=5
 [application]
 
 config/name="Tamagotchi Full Game"
+run/main_scene="res://scenes/system/system/main_game.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GeralBgm="*res://scenes/resource/gerals/geral_bgm.tscn"
+GeralSfx="*res://scenes/resource/gerals/geral_sfx.tscn"
+
 [display]
 
-window/size/viewport_width=710
-window/size/viewport_height=640
+window/size/viewport_width=750
+window/size/viewport_height=680
 window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg", "res://addons/wakatime/plugin.cfg")
+enabled=PackedStringArray()
+
+[global_group]
+
+buttons=""
 
 [rendering]
 

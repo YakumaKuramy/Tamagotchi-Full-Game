@@ -1,7 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://dr311uiln6dle"]
+[gd_scene load_steps=13 format=3 uid="uid://dr311uiln6dle"]
 
 [ext_resource type="Script" path="res://scripts/system/system/main_game.gd" id="1_4j10d"]
 [ext_resource type="Texture2D" uid="uid://dabrtcvemppaq" path="res://assets/sprites/ui/backgrounds/sprite_bg.png" id="1_nlt76"]
+[ext_resource type="Texture2D" uid="uid://ctn6fmfi4vxc7" path="res://assets/sprites/ui/backgrounds/sprite_bg_display.png" id="3_ymfwf"]
+[ext_resource type="Texture2D" uid="uid://df5ml1ry2ungj" path="res://assets/sprites/resource/itens/sprite_mat.png" id="4_fnvxk"]
+[ext_resource type="PackedScene" uid="uid://pe5bj5uyy7dr" path="res://scenes/characters/player/cat.tscn" id="4_m8h4t"]
+[ext_resource type="Texture2D" uid="uid://cgf4tdgi0ducw" path="res://assets/sprites/resource/references/sprite_bg.png" id="6_gou2c"]
+[ext_resource type="PackedScene" uid="uid://ctitvpqd37s6p" path="res://scenes/resource/gerals/template_button.tscn" id="7_ceymd"]
+[ext_resource type="Texture2D" uid="uid://cy0y7w0g2kp6g" path="res://assets/sprites/ui/buttons/sprite_button_left.png" id="8_3fc3w"]
+[ext_resource type="Texture2D" uid="uid://bpe00ejhvn8h5" path="res://assets/sprites/ui/buttons/sprite_button_right.png" id="9_5c6sd"]
+[ext_resource type="Texture2D" uid="uid://msn81a3uypwx" path="res://assets/sprites/ui/buttons/sprite_button_green.png" id="10_yibys"]
+[ext_resource type="Texture2D" uid="uid://b281ehwwgpacn" path="res://assets/sprites/ui/buttons/sprite_button_pink.png" id="11_rp35i"]
+[ext_resource type="Texture2D" uid="uid://dd3vx4gji6scf" path="res://assets/sprites/ui/buttons/sprite_button_white.png" id="12_1xbw7"]
 
 [node name="main_game" type="Control"]
 layout_mode = 3
@@ -17,6 +27,73 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_nlt76")
+
+[node name="display" type="TextureRect" parent="background"]
+layout_mode = 0
+offset_left = 177.0
+offset_top = 150.0
+offset_right = 532.0
+offset_bottom = 548.0
+texture = ExtResource("3_ymfwf")
+
+[node name="mat" type="TextureRect" parent="background"]
+layout_mode = 0
+offset_left = 217.0
+offset_top = 428.0
+offset_right = 477.0
+offset_bottom = 482.0
+texture = ExtResource("4_fnvxk")
+
+[node name="cat" parent="." instance=ExtResource("4_m8h4t")]
+position = Vector2(389, 390)
+
+[node name="buttons" type="Node" parent="."]
+
+[node name="button_left" parent="buttons" instance=ExtResource("7_ceymd")]
+offset_left = 115.0
+offset_top = 329.0
+offset_right = 180.0
+offset_bottom = 448.0
+icon = ExtResource("8_3fc3w")
+
+[node name="button_right" parent="buttons" instance=ExtResource("7_ceymd")]
+offset_left = 578.0
+offset_top = 331.0
+offset_right = 643.0
+offset_bottom = 450.0
+icon = ExtResource("9_5c6sd")
+
+[node name="button_green" parent="buttons" instance=ExtResource("7_ceymd")]
+offset_left = 246.0
+offset_top = 581.0
+offset_right = 298.0
+offset_bottom = 634.0
+icon = ExtResource("10_yibys")
+
+[node name="button_pink" parent="buttons" instance=ExtResource("7_ceymd")]
+offset_left = 336.0
+offset_top = 584.0
+offset_right = 424.0
+offset_bottom = 639.0
+icon = ExtResource("11_rp35i")
+
+[node name="button_white" parent="buttons" instance=ExtResource("7_ceymd")]
+offset_left = 456.0
+offset_top = 579.0
+offset_right = 511.0
+offset_bottom = 632.0
+icon = ExtResource("12_1xbw7")
+
+[node name="SpriteBg" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.392157)
+position = Vector2(20, 20)
+texture = ExtResource("6_gou2c")
+centered = false
