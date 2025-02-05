@@ -54,9 +54,16 @@ texture = ExtResource("4_fnvxk")
 [node name="cat" parent="." instance=ExtResource("4_m8h4t")]
 position = Vector2(389, 390)
 
-[node name="buttons" type="Node" parent="."]
+[node name="buttons" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="button_left" parent="buttons" instance=ExtResource("7_ceymd")]
+layout_mode = 0
 offset_left = 115.0
 offset_top = 329.0
 offset_right = 180.0
@@ -64,6 +71,7 @@ offset_bottom = 448.0
 icon = ExtResource("8_3fc3w")
 
 [node name="button_right" parent="buttons" instance=ExtResource("7_ceymd")]
+layout_mode = 0
 offset_left = 578.0
 offset_top = 331.0
 offset_right = 643.0
@@ -71,6 +79,7 @@ offset_bottom = 450.0
 icon = ExtResource("9_5c6sd")
 
 [node name="button_green" parent="buttons" instance=ExtResource("7_ceymd")]
+layout_mode = 0
 offset_left = 246.0
 offset_top = 581.0
 offset_right = 298.0
@@ -78,6 +87,7 @@ offset_bottom = 634.0
 icon = ExtResource("10_yibys")
 
 [node name="button_pink" parent="buttons" instance=ExtResource("7_ceymd")]
+layout_mode = 0
 offset_left = 336.0
 offset_top = 584.0
 offset_right = 424.0
@@ -85,6 +95,7 @@ offset_bottom = 639.0
 icon = ExtResource("11_rp35i")
 
 [node name="button_white" parent="buttons" instance=ExtResource("7_ceymd")]
+layout_mode = 0
 offset_left = 456.0
 offset_top = 579.0
 offset_right = 511.0
