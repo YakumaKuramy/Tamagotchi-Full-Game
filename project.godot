@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GeralBgm="*res://scenes/resource/gerals/geral_bgm.tscn"
 GeralSfx="*res://scenes/resource/gerals/geral_sfx.tscn"
+GameController="*res://scripts/resource/gerals/game_controller.gd"
 
 [display]
 

@@ -7,8 +7,11 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dyxcv"]
 
 [node name="template_button" type="Button" groups=["buttons"]]
-offset_right = 8.0
-offset_bottom = 8.0
+anchors_preset = -1
+anchor_right = 0.011
+anchor_bottom = 0.012
+offset_right = -0.250001
+offset_bottom = -0.16
 theme_override_styles/focus = SubResource("StyleBoxEmpty_b10lp")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_b10lp")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_b10lp")

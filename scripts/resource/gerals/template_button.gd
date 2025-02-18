@@ -3,12 +3,12 @@ extends Button
 func _ready() -> void:
 	self.pivot_offset = self.get_size() / 2
 	for button in get_tree().get_nodes_in_group("buttons"):
-		if not button.pressed.is_connected(self._on_button_pressed.bind(button)):
-			button.pressed.connect(self._on_button_pressed.bind(button))
+		if not button.pressed.is_connected(button._on_button_pressed.bind(button)):
+			button.pressed.connect(button._on_button_pressed.bind(button))
 
 
 func _on_button_pressed(button: Button) -> void:
-	_tween(button, "scale", Vector2(1, 1), Vector2(.9, .9), .2)
+	_tween(button, "scale", Vector2(1, 1), Vector2(0.9, 0.9), 0.1)
 	match button.name:
 		"button_left":
 			GeralSfx.play_sfx(0)

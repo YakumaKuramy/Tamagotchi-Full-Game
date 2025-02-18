@@ -3,4 +3,5 @@
 [ext_resource type="Script" path="res://scripts/resource/gerals/geral_sfx.gd" id="1_1gp73"]
 
 [node name="geral_sfx" type="AudioStreamPlayer"]
+volume_db = -24.0
 script = ExtResource("1_1gp73")
