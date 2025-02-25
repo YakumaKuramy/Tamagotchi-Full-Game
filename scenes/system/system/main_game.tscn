@@ -1,13 +1,12 @@
-[gd_scene load_steps=12 format=3 uid="uid://dr311uiln6dle"]
+[gd_scene load_steps=11 format=3 uid="uid://dr311uiln6dle"]
 
 [ext_resource type="Script" path="res://scripts/system/system/main_game.gd" id="1_4j10d"]
-[ext_resource type="Texture2D" uid="uid://dabrtcvemppaq" path="res://assets/sprites/ui/backgrounds/sprite_bg.png" id="1_nlt76"]
-[ext_resource type="Texture2D" uid="uid://ctn6fmfi4vxc7" path="res://assets/sprites/ui/backgrounds/sprite_bg_display.png" id="3_ymfwf"]
-[ext_resource type="Texture2D" uid="uid://df5ml1ry2ungj" path="res://assets/sprites/resource/itens/sprite_mat.png" id="4_fnvxk"]
+[ext_resource type="PackedScene" uid="uid://d4hf1laevi0b" path="res://scenes/resource/gerals/animals_background.tscn" id="2_dnrmo"]
 [ext_resource type="PackedScene" uid="uid://pe5bj5uyy7dr" path="res://scenes/characters/player/cat.tscn" id="4_m8h4t"]
 [ext_resource type="PackedScene" uid="uid://ctitvpqd37s6p" path="res://scenes/resource/gerals/template_button.tscn" id="7_ceymd"]
 [ext_resource type="Texture2D" uid="uid://cy0y7w0g2kp6g" path="res://assets/sprites/ui/buttons/sprite_button_left.png" id="8_3fc3w"]
 [ext_resource type="Texture2D" uid="uid://bpe00ejhvn8h5" path="res://assets/sprites/ui/buttons/sprite_button_right.png" id="9_5c6sd"]
+[ext_resource type="PackedScene" uid="uid://dhcp54o6rgptv" path="res://scenes/resource/gerals/geral_background.tscn" id="10_u04xb"]
 [ext_resource type="Texture2D" uid="uid://msn81a3uypwx" path="res://assets/sprites/ui/buttons/sprite_button_green.png" id="10_yibys"]
 [ext_resource type="Texture2D" uid="uid://b281ehwwgpacn" path="res://assets/sprites/ui/buttons/sprite_button_pink.png" id="11_rp35i"]
 [ext_resource type="Texture2D" uid="uid://dd3vx4gji6scf" path="res://assets/sprites/ui/buttons/sprite_button_white.png" id="12_1xbw7"]
@@ -21,50 +20,28 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4j10d")
 
-[node name="background" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 20.0
-offset_top = 20.0
-offset_right = -20.0
-offset_bottom = -20.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("1_nlt76")
+[node name="geral_background" parent="." instance=ExtResource("10_u04xb")]
 
-[node name="display" type="TextureRect" parent="background"]
+[node name="background" parent="." instance=ExtResource("2_dnrmo")]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.249
-anchor_top = 0.234
-anchor_right = 0.749
-anchor_bottom = 0.856
-offset_left = 0.209991
-offset_top = 0.23999
-offset_right = 0.209961
-offset_bottom = 0.159973
-texture = ExtResource("3_ymfwf")
-
-[node name="mat" type="TextureRect" parent="background"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.306
-anchor_top = 0.669
-anchor_right = 0.672
-anchor_bottom = 0.753
-offset_left = -0.26001
-offset_top = -0.160034
-offset_right = -0.120026
-offset_bottom = 0.0799866
-texture = ExtResource("4_fnvxk")
+anchor_left = 0.013
+anchor_top = 0.015
+anchor_right = 0.987
+anchor_bottom = 0.985
+offset_left = 0.25
+offset_top = -0.200001
+offset_right = -0.250061
+offset_bottom = 0.199951
+grow_horizontal = 1
+grow_vertical = 1
 
 [node name="buttons" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 11.0
+offset_bottom = 11.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -124,5 +101,6 @@ offset_bottom = 632.0
 icon = ExtResource("12_1xbw7")
 
 [node name="cat" parent="." instance=ExtResource("4_m8h4t")]
-position = Vector2(365, 441)
+position = Vector2(364, 439)
+frame_progress = 0.0
 offset = Vector2(40, -55)

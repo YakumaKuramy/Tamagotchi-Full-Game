@@ -26,6 +26,7 @@ GameController="*res://scripts/resource/gerals/game_controller.gd"
 window/size/viewport_width=750
 window/size/viewport_height=680
 window/stretch/mode="canvas_items"
+window/handheld/orientation=1
 
 [editor_plugins]
 

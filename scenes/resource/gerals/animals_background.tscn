@@ -1,0 +1,101 @@
+[gd_scene load_steps=11 format=3 uid="uid://d4hf1laevi0b"]
+
+[ext_resource type="Texture2D" uid="uid://dabrtcvemppaq" path="res://assets/sprites/ui/backgrounds/sprite_bg.png" id="1_u3cwb"]
+[ext_resource type="Script" path="res://scripts/resource/gerals/animals_background.gd" id="2_8crvh"]
+[ext_resource type="Texture2D" uid="uid://ctn6fmfi4vxc7" path="res://assets/sprites/ui/backgrounds/sprite_bg_display.png" id="2_8s20h"]
+[ext_resource type="Texture2D" uid="uid://df5ml1ry2ungj" path="res://assets/sprites/resource/itens/sprite_mat.png" id="3_14mx5"]
+[ext_resource type="Texture2D" uid="uid://d4hy8i3mxkbjm" path="res://assets/sprites/ui/icons/sprite_icon_bath01.png" id="4_vno5n"]
+[ext_resource type="Texture2D" uid="uid://cqqyimlfsqc55" path="res://assets/sprites/ui/icons/sprite_icon_food01.png" id="6_hb182"]
+[ext_resource type="Texture2D" uid="uid://c5alndq63gnjd" path="res://assets/sprites/ui/icons/sprite_icon_play01.png" id="7_qcuoh"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yso3b"]
+texture = ExtResource("6_hb182")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kur2d"]
+texture = ExtResource("4_vno5n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fvty1"]
+texture = ExtResource("7_qcuoh")
+
+[node name="background" type="TextureRect"]
+anchors_preset = -1
+anchor_right = 0.947
+anchor_bottom = 0.941
+offset_right = -0.25
+offset_bottom = 0.119995
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_u3cwb")
+script = ExtResource("2_8crvh")
+
+[node name="display" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.249
+anchor_top = 0.234
+anchor_right = 0.749
+anchor_bottom = 0.856
+offset_left = 0.209991
+offset_top = 0.23999
+offset_right = 0.209961
+offset_bottom = 0.159973
+texture = ExtResource("2_8s20h")
+
+[node name="mat" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.306
+anchor_top = 0.669
+anchor_right = 0.672
+anchor_bottom = 0.753
+offset_left = -0.26001
+offset_top = -8.16003
+offset_right = -0.119995
+offset_bottom = -7.92001
+pivot_offset = Vector2(130, 27)
+texture = ExtResource("3_14mx5")
+
+[node name="eat_timer" type="Timer" parent="."]
+
+[node name="icons" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(340, 50)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.259
+anchor_top = 0.762
+anchor_right = 0.738
+anchor_bottom = 0.841
+offset_left = 0.110001
+offset_top = 0.319977
+offset_right = 0.0199585
+offset_bottom = -0.23999
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="progress_food" type="ProgressBar" parent="icons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/background = SubResource("StyleBoxTexture_yso3b")
+fill_mode = 3
+show_percentage = false
+
+[node name="progress_bath" type="ProgressBar" parent="icons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxTexture_kur2d")
+fill_mode = 3
+show_percentage = false
+
+[node name="progress_play" type="ProgressBar" parent="icons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxTexture_fvty1")
+fill_mode = 3
+show_percentage = false

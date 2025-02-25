@@ -8,7 +8,7 @@ func _ready() -> void:
 
 
 func _on_button_pressed(button: Button) -> void:
-	_tween(button, "scale", Vector2(1, 1), Vector2(0.9, 0.9), 0.1)
+	_tween(button, "scale", Vector2(1, 1), Vector2(0.9, 0.9), 0.1) 
 	match button.name:
 		"button_left":
 			GeralSfx.play_sfx(0)
