@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://douloaoypljd" path="res://assets/sprites/characters/cat/sprite_gato_idle.png" id="4_al5t8"]
 [ext_resource type="Texture2D" uid="uid://b447ocy1bx8dg" path="res://assets/sprites/characters/cat/sprite_gato_miau.png" id="5_kxm60"]
 [ext_resource type="Texture2D" uid="uid://dg8vk8a2m7myk" path="res://assets/sprites/characters/cat/sprite_gato_brinca_01.png" id="6_v7m1p"]
-[ext_resource type="Script" path="res://scripts/characters/cat.gd" id="7_gxncw"]
+[ext_resource type="Script" uid="uid://b6k7n80bfrvic" path="res://scripts/characters/cat.gd" id="7_gxncw"]
 [ext_resource type="Texture2D" uid="uid://bqd583a7b0ksm" path="res://assets/sprites/characters/cat/sprite_gato_triste.png" id="7_xiwup"]
 [ext_resource type="Texture2D" uid="uid://damk6k5mpurus" path="res://assets/sprites/characters/cat/sprite_gato_idle_sujeira.png" id="10_c0mib"]
 

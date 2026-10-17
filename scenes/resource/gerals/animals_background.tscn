@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://d4hf1laevi0b"]
 
 [ext_resource type="Texture2D" uid="uid://dabrtcvemppaq" path="res://assets/sprites/ui/backgrounds/sprite_bg.png" id="1_u3cwb"]
-[ext_resource type="Script" path="res://scripts/resource/gerals/animals_background.gd" id="2_8crvh"]
+[ext_resource type="Script" uid="uid://cqqiqk72knpp1" path="res://scripts/resource/gerals/animals_background.gd" id="2_8crvh"]
 [ext_resource type="Texture2D" uid="uid://ctn6fmfi4vxc7" path="res://assets/sprites/ui/backgrounds/sprite_bg_display.png" id="2_8s20h"]
 [ext_resource type="Texture2D" uid="uid://df5ml1ry2ungj" path="res://assets/sprites/resource/itens/sprite_mat.png" id="3_14mx5"]
 [ext_resource type="Texture2D" uid="uid://d4hy8i3mxkbjm" path="res://assets/sprites/ui/icons/sprite_icon_bath01.png" id="4_vno5n"]

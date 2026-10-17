@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://dr311uiln6dle"]
 
-[ext_resource type="Script" path="res://scripts/system/system/main_game.gd" id="1_4j10d"]
+[ext_resource type="Script" uid="uid://dklhmjar3sm75" path="res://scripts/system/system/main_game.gd" id="1_4j10d"]
 [ext_resource type="PackedScene" uid="uid://d4hf1laevi0b" path="res://scenes/resource/gerals/animals_background.tscn" id="2_dnrmo"]
 [ext_resource type="PackedScene" uid="uid://pe5bj5uyy7dr" path="res://scenes/characters/player/cat.tscn" id="4_m8h4t"]
 [ext_resource type="PackedScene" uid="uid://ctitvpqd37s6p" path="res://scenes/resource/gerals/template_button.tscn" id="7_ceymd"]
